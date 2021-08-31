@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>head}}
+    <style>
+        .error {
+           flex-direction:column;
+           height: 84vh;
+        }
+
+        .main_button:hover {
+            background-color: var(--main-);
+            transition: 0.5s ease;
+            border: none;
+        }
+
+       .main_button {
+            padding: 1rem;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 4px 4px 8px -6px;
+        }
+    </style>
+</head>
+
+<body>
+    {{!-- NAVBAR --}}
+    {{>navbar}}
+
+    {{!-- HEADER --}}
+    <div class="container ">
+        <div class="row">
+            <div class="col-12 col-md-12 mx-auto">
+                <div class="d-flex justify-content-center align-items-center error">
+                    <figure>
+                        <img src="./images/404.gif" alt="gif" style="height: 30rem; width: 36rem;">
+                    </figure>
+                    <a href="/"><button class="btn main_button mb-4">Go back</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {{!-- FOOTER --}}
+    {{>footer}}
+</body>
+
+</html>
